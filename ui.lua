@@ -1,5 +1,5 @@
 function top()
-  io.write("Welcome!\n")
+  io.write("Welcome to JasDigits!\n")
   io.write("Version ")
   io.write(version)
   io.write("\n\n")
@@ -88,7 +88,7 @@ function prompt(m)
       loop = false
     end
   end
-end 
+end
 
 function noMoreMoves()
   io.write("\nNo more moves!\n")
