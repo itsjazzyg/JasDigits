@@ -7,7 +7,7 @@ require("val")
 require("ui")
 
 math.randomseed(os.time())
-version = ("1.0")
+version = ("1.0.1")
 
 --initialize
 
