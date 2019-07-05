@@ -6,7 +6,7 @@ function top()
 end
 
 function r(m)
-  --os.execute("clear")
+  os.execute("clear")
   top()
   io.write("Score:")
   io.write(calcScore(m))
