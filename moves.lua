@@ -1,4 +1,6 @@
-function moveUp(m)
+function moveUp(t)
+  m = tableElementDuplicate(t)
+
   for i = 0,11 do
     if m[i] == m[i+4] then
       m[i] = m[i]*2
@@ -11,7 +13,9 @@ function moveUp(m)
   return m
 end
 
-function moveDown(m)
+function moveDown(t)
+  m = tableElementDuplicate(t)
+
   i = 15
   while i >=4 do
     if m[i] == m[i-4] then
@@ -26,7 +30,9 @@ function moveDown(m)
   return m
 end
 
-function moveLeft(m)
+function moveLeft(t)
+  m = tableElementDuplicate(t)
+
   i = 0
   while i ~= 3 do
     if m[i] == m[i+1] then
@@ -42,7 +48,9 @@ function moveLeft(m)
   return m
 end
 
-function moveRight(m)
+function moveRight(t)
+  m = tableElementDuplicate(t)
+
   i = 15
   while i ~= 12 do
     if m[i] == m[i-1] then
@@ -56,4 +64,4 @@ function moveRight(m)
     if i < 0 then i = i+15 end
   end
   return m
-end  
+end

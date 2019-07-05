@@ -1,3 +1,9 @@
+Version 1.1 (July 5, 2019)
++ New table structure
++ Undo feature
++ Start new game during current game
++ Better modularity
+
 Version 1.0.2 (July 5, 2019)
 + UI improvements
 + Improved end game detection

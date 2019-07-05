@@ -1,28 +1,27 @@
 function load()
-  m = {}
-  mo = {}
-  mc = {}
-  moc = 0
-  mcc = 0
-  for i = 0,15 do m[i] = 0 end
+  table = {}
+  table[0] = {}
 
-  while countBlank(m) >= 14 do
-    m[math.random(0,15)] = 2
+  for i = 0,15 do table[0][i] = 0 end
+
+  while countBlank(table[0]) >= 14 do
+    table[0][math.random(0,15)] = 2
   end
 
-  r(m)
+  r(table[0])
 
   main()
 end
 
 function main()
   game = true
+  moveCount = 0
 
   while game do
-    prompt(m)
-    r(m)
+    moveCount = prompt(table,moveCount)
+    r(table[moveCount])
 
-    if gameOver(m) then
+    if gameOver(table[moveCount]) then
       noMoreMoves()
       game = false
     end
