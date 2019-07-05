@@ -1,3 +1,5 @@
+math.randomseed(os.time())
+
 function randNum(level)
   numlist = {}
   w = {}

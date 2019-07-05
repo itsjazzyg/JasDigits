@@ -81,12 +81,6 @@ function prompt(m)
     else
       io.write("Invalid response\n")
     end
-
-    inv = invUp + invDown + invLeft + invRight
-    if inv == 4 then
-      noMoreMoves()
-      loop = false
-    end
   end
 end
 
@@ -94,9 +88,10 @@ function noMoreMoves()
   io.write("\nNo more moves!\n")
   io.write("Your score is ")
   io.write(calcScore(m))
-  io.write("!")
+  io.write("!\n")
+  io.write("Press return for new game!")
 
   io.read()
-
+  
   load()
 end

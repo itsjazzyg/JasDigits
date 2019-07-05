@@ -5,17 +5,6 @@ require("newnum")
 require("rand")
 require("val")
 require("ui")
-
-math.randomseed(os.time())
-version = ("1.0.1")
-
---initialize
+require("_version")
 
 load()
-
---game
-
-while game do
-  prompt(m)
-  r(m)
-end
